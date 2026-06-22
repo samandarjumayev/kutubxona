@@ -31,7 +31,7 @@ export default function Header() {
                         : "text-[#64748B] border-transparent hover:text-[#0439A1] hover:border-[#0439A1]"
                     }`}>Bo'limlar</Link>
                 <Link href={`/elektron-kitoblar`} className={`text-[20px] font-[500] border-b-2 transition-all duration-200 
-                        ${pathname === "/elektron-kitoblar"
+                        ${pathname.startsWith("/elektron-kitoblar")
                         ? "text-[#0439A1] border-[#0439A1]"
                         : "text-[#64748B] border-transparent hover:text-[#0439A1] hover:border-[#0439A1]"
                     }`}>Elektron Kitoblar</Link>

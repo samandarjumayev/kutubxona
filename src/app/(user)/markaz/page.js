@@ -118,8 +118,8 @@ export default function Markaz() {
             </div>
 
             {/* Qadriyatlarimiz */}
-            <div className="h-[505px] bg-[#EBF4FF66] border">
-                <div className="max-w-[1570px] px-[10px] mx-auto border h-full">
+            <div className="h-[505px] bg-[#EBF4FF66]">
+                <div className="max-w-[1570px] px-[10px] mx-auto h-full">
                     {/* Title */}
                     <div className="text-center pt-[70px]">
                         <p className="text-[#2A85F4] uppercase text-[12px] font-[700] tracking-[1px]">Qadriyatlarimiz</p>
@@ -181,7 +181,7 @@ export default function Markaz() {
 
             {/* Xizmatlar */}
             <div className="h-[478px]">
-                <div className="max-w-[1570px] px-[10px] mx-auto border h-full">
+                <div className="max-w-[1570px] px-[10px] mx-auto h-full">
                     {/* Title */}
                     <div className="flex items-end justify-between pt-[70px]">
                         <div>
@@ -319,7 +319,7 @@ export default function Markaz() {
 
             {/* Jamoa */}
             <div className="h-[619px] w-full bg-[#F8FAFC] mb-10">
-                <div className="h-full max-w-[1570px] px-[10px] mx-auto border">
+                <div className="h-full max-w-[1570px] px-[10px] mx-auto">
                     <div className="text-center pt-[66px]">
                         <p className="text-[#2A85F4] uppercase text-[12px] font-[800] tracking-[2px] leading-[16px]">Jamoa</p>
                         <h2 className="text-[#153965] text-[40px] font-[800] leading-[48px] mt-[12px]">Markaz rahbariyati</h2>
@@ -370,7 +370,7 @@ export default function Markaz() {
             </div>
   
             {/* Quote */}
-            <div className="w-full mb-10 border py-[64px]">
+            <div className="w-full mb-10 py-[64px]">
                 <div className="h-full max-w-[1570px] mx-auto ">
                     <div className="w-[1280px] h-[352px] mx-auto rounded-[24px] bg-gradient-to-r from-[#102B4C] via-[#2E1F7A] to-[#6A288A] flex flex-col items-center justify-center text-center">
                         <p className="text-[#2A85F4] text-[72px] font-[800] leading-[54px] mb-[30px]">”</p>

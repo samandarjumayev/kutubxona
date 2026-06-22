@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowRight, BookOpen, Bookmark, ChevronRight, Eye, Filter, Grid3X3, Headphones, List, Menu, Search, Star } from "lucide-react";
+import Link from "next/link";
 import { useMemo, useState } from "react";
 
 const books = [
@@ -48,7 +49,7 @@ const formats = [
     ["Video kurs", "480"],
 ];
 
-export default function ElektronKitoblar(){
+export default function ElektronKitoblar() {
     const [page, setPage] = useState(1);
     const perPage = 16;
     const demoBooks = useMemo(() => {
@@ -223,7 +224,12 @@ export default function ElektronKitoblar(){
 
                         <div className="grid grid-cols-4 justify-between gap-y-[24px]">
                             {currentBooks.map((book) => (
-                                <div key={book.id} className="w-[294px] h-[411px] rounded-[20px] overflow-hidden border border-[#D7DEE8] bg-white flex flex-col">
+                                <Link
+                                    href={`/elektron-kitoblar/${book.id}`}
+                                    key={book.id}
+                                    className="w-[294px] h-[411px] rounded-[20px] overflow-hidden border border-[#D7DEE8] bg-white flex flex-col group hover:shadow-lg transition-all cursor-pointer"
+                                >
+                                    {/* Yuqori qism (Rasm / Gradient) */}
                                     <div className={`relative h-[192px] bg-gradient-to-br ${book.gradient} flex items-center justify-center`}>
                                         <span className="absolute left-[16px] top-[14px] h-[26px] px-[12px] rounded-full bg-white/20 text-white text-[11px] font-[700] flex items-center">
                                             {book.type}
@@ -231,34 +237,49 @@ export default function ElektronKitoblar(){
                                         <span className={`absolute right-[16px] top-[14px] h-[26px] px-[12px] rounded-full text-white text-[11px] font-[800] flex items-center ${book.access === "BEPUL" ? "bg-[#22C55E]" : "bg-[#FFB020]"}`}>
                                             {book.access}
                                         </span>
-                                        <BookOpen size={54} strokeWidth={2.2} className="text-white" />
-                                        <button className="absolute right-[16px] bottom-[16px] w-[40px] h-[40px] rounded-full bg-white/20 text-white flex items-center justify-center">
+
+                                        <BookOpen size={54} strokeWidth={2.2} className="text-white group-hover:scale-105 transition-transform" />
+
+                                        {/* Saqlash tugmasi (Link ichida bo'lgani uchun e.preventDefault() kerak) */}
+                                        <button
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                // Bu yerda saqlash funksiyasini chaqirishingiz mumkin
+                                            }}
+                                            className="absolute right-[16px] bottom-[16px] w-[40px] h-[40px] rounded-full bg-white/20 text-white flex items-center justify-center hover:bg-white/30 active:scale-95 transition-all"
+                                        >
                                             <Bookmark size={18} strokeWidth={2.2} />
                                         </button>
                                     </div>
 
-                                    <div className="flex-1 px-[22px] pt-[24px] flex flex-col gap-2">
-                                        <p className="text-[#2A85F4] text-[11px] font-[800] leading-[14px] tracking-[1px]">{book.category}</p>
-                                        <h3 className="text-[#153965] text-[18px] font-[800] leading-[24px]">{book.title}</h3>
-                                        <p className="text-[#65758B] text-[13px] font-[500] leading-[18px] mt-[30px]">{book.author}</p>
-
-                                        <div className="flex items-center justify-between">
-                                            <div className="flex items-center gap-[6px]">
-                                                <Star size={16} className="fill-[#F5B400] text-[#F5B400]" />
-                                                <span className="text-[#153965] text-[13px] font-[800]">{book.rating}</span>
-                                            </div>
-                                            <div className="flex items-center gap-[6px] text-[#65758B] text-[13px] font-[500]">
-                                                <Eye size={15} strokeWidth={2} />
-                                                {book.views}
-                                            </div>
+                                    {/* Pastki qism (Ma'lumotlar) */}
+                                    <div className="flex-1 px-[22px] pt-[24px] pb-[20px] flex flex-col justify-between">
+                                        <div className="flex flex-col gap-2">
+                                            <p className="text-[#2A85F4] text-[11px] font-[800] leading-[14px] tracking-[1px]">{book.category}</p>
+                                            <h3 className="text-[#153965] text-[18px] font-[800] leading-[24px] line-clamp-2 group-hover:text-[#2A85F4] transition-colors">{book.title}</h3>
+                                            <p className="text-[#65758B] text-[13px] font-[500] leading-[18px] mt-[10px]">{book.author}</p>
                                         </div>
 
-                                        <button className="w-full h-[46px] rounded-[11px] bg-[#EAF3FF] text-[#2A85F4] text-[14px] font-[800] flex items-center justify-center gap-[8px]">
-                                            <BookOpen size={17} strokeWidth={2.2} />
-                                            O'qish
-                                        </button>
+                                        <div className="space-y-[16px]">
+                                            <div className="flex items-center justify-between">
+                                                <div className="flex items-center gap-[6px]">
+                                                    <Star size={16} className="fill-[#F5B400] text-[#F5B400]" />
+                                                    <span className="text-[#153965] text-[13px] font-[800]">{book.rating}</span>
+                                                </div>
+                                                <div className="flex items-center gap-[6px] text-[#65758B] text-[13px] font-[500]">
+                                                    <Eye size={15} strokeWidth={2} />
+                                                    {book.views}
+                                                </div>
+                                            </div>
+
+                                            {/* O'qish tugmasi */}
+                                            <div className="w-full h-[46px] rounded-[11px] bg-[#EAF3FF] text-[#2A85F4] text-[14px] font-[800] flex items-center justify-center gap-[8px] group-hover:bg-[#2A85F4] group-hover:text-white transition-all">
+                                                <BookOpen size={17} strokeWidth={2.2} />
+                                                O'qish
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             ))}
                         </div>
 
