@@ -9,10 +9,10 @@ export default function Header() {
 
     return <div className={`h-[103px] bg-white shadow-lg`}>
         <div className="max-w-[1570px] mx-auto px-[10px] flex items-center justify-between h-full">
-            <div className="flex items-center justify-between gap-3">
+            <a href="/" className="flex items-center justify-between gap-3 cursor-pointer">
                 <Image src={'/logo.png'} width={65} height={64} alt="Web logo image" />
                 <h1 className="text-[#0439A1] font-[700] text-[20px] leading-[24px]">Elektron Kutubxona <br /> Boshqaruv Tizimi</h1>
-            </div>
+            </a>
 
             <div className="flex items-center justify-between gap-[64px]">
                 <Link href={`/`} className={`text-[20px] font-[500] border-b-2 transition-all duration-200 
