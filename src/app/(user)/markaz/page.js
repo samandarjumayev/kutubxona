@@ -1,5 +1,5 @@
 
-import { ArrowRight, Award, BookOpenCheck, Building2, ChevronRight, Compass, Download, GraduationCap, ShieldCheck, Sparkles, Target, Users } from "lucide-react"
+import { ArrowRight, Award, BookOpenCheck, Building2, ChevronRight, Clock, Compass, Download, GraduationCap, Mail, MapPin, Phone, ShieldCheck, Sparkles, Target, Users } from "lucide-react"
 
 
 export default function Markaz() {
@@ -266,11 +266,11 @@ export default function Markaz() {
                     </div>
 
                     {/* Timeline */}
-                    <div className="relative w-[1320px] h-[508px] mx-auto mt-[52px]">
+                    <div className="relative w-full h-[508px] mx-auto mt-[52px]">
                         <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[1px] h-full bg-white/15"></div>
 
                         {/* 1927 */}
-                        <div className="absolute top-[8px] left-[372px] w-[180px] text-right">
+                        <div className="absolute top-[8px] left-[552px] w-[180px] text-right">
                             <p className="text-[#2A85F4] text-[36px] font-[800] leading-[42px]">1927</p>
                         </div>
                         <div className="absolute top-[0px] right-0 w-[732px] h-[76px] rounded-[14px] border border-white/10 bg-white/5 px-[24px] flex items-center">
@@ -279,7 +279,7 @@ export default function Markaz() {
                         </div>
 
                         {/* 1965 */}
-                        <div className="absolute top-[116px] left-[760px] w-[180px]">
+                        <div className="absolute top-[116px] left-[838px] w-[180px]">
                             <p className="text-[#2A85F4] text-[36px] font-[800] leading-[42px]">1965</p>
                         </div>
                         <div className="absolute top-[108px] left-0 w-[732px] h-[76px] rounded-[14px] border border-white/10 bg-white/5 px-[24px] flex items-center">
@@ -288,7 +288,7 @@ export default function Markaz() {
                         </div>
 
                         {/* 2003 */}
-                        <div className="absolute top-[224px] left-[372px] w-[180px] text-right">
+                        <div className="absolute top-[224px] left-[552px] w-[180px] text-right">
                             <p className="text-[#2A85F4] text-[36px] font-[800] leading-[42px]">2003</p>
                         </div>
                         <div className="absolute top-[216px] right-0 w-[732px] h-[76px] rounded-[14px] border border-white/10 bg-white/5 px-[24px] flex items-center">
@@ -297,7 +297,7 @@ export default function Markaz() {
                         </div>
 
                         {/* 2018 */}
-                        <div className="absolute top-[332px] left-[760px] w-[180px]">
+                        <div className="absolute top-[332px] left-[838px] w-[180px]">
                             <p className="text-[#2A85F4] text-[36px] font-[800] leading-[42px]">2018</p>
                         </div>
                         <div className="absolute top-[324px] left-0 w-[732px] h-[76px] rounded-[14px] border border-white/10 bg-white/5 px-[24px] flex items-center">
@@ -306,7 +306,7 @@ export default function Markaz() {
                         </div>
 
                         {/* 2024 */}
-                        <div className="absolute top-[440px] left-[372px] w-[180px] text-right">
+                        <div className="absolute top-[440px] left-[552px] w-[180px] text-right">
                             <p className="text-[#2A85F4] text-[36px] font-[800] leading-[42px]">2024</p>
                         </div>
                         <div className="absolute top-[432px] right-0 w-[732px] h-[76px] rounded-[14px] border border-white/10 bg-white/5 px-[24px] flex items-center">
@@ -319,7 +319,7 @@ export default function Markaz() {
 
             {/* Jamoa */}
             <div className="h-[619px] w-full bg-[#F8FAFC] mb-10">
-                <div className="h-full max-w-[1570px] mx-auto">
+                <div className="h-full max-w-[1570px] px-[10px] mx-auto border">
                     <div className="text-center pt-[66px]">
                         <p className="text-[#2A85F4] uppercase text-[12px] font-[800] tracking-[2px] leading-[16px]">Jamoa</p>
                         <h2 className="text-[#153965] text-[40px] font-[800] leading-[48px] mt-[12px]">Markaz rahbariyati</h2>
@@ -368,10 +368,61 @@ export default function Markaz() {
                     </div>
                 </div>
             </div>
+  
+            {/* Quote */}
+            <div className="w-full mb-10 border py-[64px]">
+                <div className="h-full max-w-[1570px] mx-auto ">
+                    <div className="w-[1280px] h-[352px] mx-auto rounded-[24px] bg-gradient-to-r from-[#102B4C] via-[#2E1F7A] to-[#6A288A] flex flex-col items-center justify-center text-center">
+                        <p className="text-[#2A85F4] text-[72px] font-[800] leading-[54px] mb-[30px]">”</p>
+                        <h2 className="max-w-[790px] text-white text-[30px] font-[800] leading-[38px]">
+                            "Kutubxona — bu xalqning ruhi, millat tafakkurining
+                            <br />
+                            xazinasidir. Uni asrash va boyitish — hammamizning
+                            <br />
+                            burchimizdir."
+                        </h2>
+                        <p className="text-white/60 text-[15px] font-[400] leading-[20px] mt-[30px]">— Sharof Rashidov</p>
+                    </div>
+                </div>
+            </div>
 
-            {/*  */}
-            <div className="h-[619px] w-full bg-[#F8FAFC] mb-10">
-                
+            {/* Contact us */}
+            <div className="h-[460px] w-full bg-[#EBF4FF66] pt-[80px]">
+                <div className="h-full max-w-[1570px] mx-auto">
+                    <div className="grid grid-cols-3 gap-[36px]">
+                        <div className="h-[205px] rounded-[20px] border border-[#D7DEE8] bg-white px-[32px] pt-[32px]">
+                            <div className="w-[48px] h-[48px] rounded-[14px] bg-[#EAF3FF] text-[#2A85F4] flex items-center justify-center">
+                                <MapPin size={24} strokeWidth={2.2} />
+                            </div>
+                            <h3 className="text-[#153965] text-[16px] font-[800] leading-[22px] mt-[24px]">Manzil</h3>
+                            <p className="text-[#65758B] text-[14px] font-[400] leading-[22px] mt-[6px]">Samarqand sh., Universitet xiyoboni 15</p>
+                        </div>
+
+                        <div className="h-[205px] rounded-[20px] border border-[#D7DEE8] bg-white px-[32px] pt-[32px]">
+                            <div className="w-[48px] h-[48px] rounded-[14px] bg-[#EAF3FF] text-[#2A85F4] flex items-center justify-center">
+                                <Phone size={24} strokeWidth={2.2} />
+                            </div>
+                            <h3 className="text-[#153965] text-[16px] font-[800] leading-[22px] mt-[24px]">Telefon</h3>
+                            <p className="text-[#65758B] text-[14px] font-[400] leading-[22px] mt-[6px]">+998 66 239 11 40</p>
+                            <p className="text-[#65758B] text-[14px] font-[400] leading-[22px]">+998 66 239 12 51</p>
+                        </div>
+
+                        <div className="h-[205px] rounded-[20px] border border-[#D7DEE8] bg-white px-[32px] pt-[32px]">
+                            <div className="w-[48px] h-[48px] rounded-[14px] bg-[#EAF3FF] text-[#2A85F4] flex items-center justify-center">
+                                <Mail size={24} strokeWidth={2.2} />
+                            </div>
+                            <h3 className="text-[#153965] text-[16px] font-[800] leading-[22px] mt-[24px]">Elektron pochta</h3>
+                            <p className="text-[#65758B] text-[14px] font-[400] leading-[22px] mt-[6px]">info@samdu.uz</p>
+                            <p className="text-[#65758B] text-[14px] font-[400] leading-[22px]">library@samdu.uz</p>
+                        </div>
+                    </div>
+
+                    <div className="h-[69px] rounded-[20px] border border-[#D7DEE8] bg-white mt-[24px] px-[25px] flex items-center gap-[18px]">
+                        <Clock size={20} strokeWidth={2.2} className="text-[#2A85F4]" />
+                        <p className="text-[#153965] text-[14px] font-[800] leading-[20px]">Ish vaqti:</p>
+                        <p className="text-[#65758B] text-[14px] font-[400] leading-[20px]">Dushanba–Juma 8:00–22:00 · Shanba 9:00–18:00 · Yakshanba dam olish</p>
+                    </div>
+                </div>
             </div>
         </div>
     )
