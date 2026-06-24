@@ -6,8 +6,8 @@ export default function Markaz() {
     return (
         <div>
             {/* Hero */}
-            <div className="h-[463px] relative bg-gradient-to-r from-[#102B4C] via-[#2E1F7A] to-[#1B2D87]">
-                <div className="h-full max-w-[1570px] mx-auto px-[10px] py-10">
+            <div className="min-h-[300px] lg:h-[463px] relative bg-gradient-to-r from-[#102B4C] via-[#2E1F7A] to-[#1B2D87]">
+                <div className="max-w-[1570px] mx-auto px-4 lg:px-[10px] py-10">
                     {/* Breadcrumb */}
                     <div className="flex items-center gap-[12px] text-[12px] font-[400] mt-[28px]">
                         <a href="#" className="text-white/60">Bosh sahifa</a>
@@ -20,68 +20,67 @@ export default function Markaz() {
                     {/* Hero title */}
                     <div className="mt-[34px]">
                         <p className="uppercase text-white/70 text-[12px] font-[700] tracking-[3px]">Biz haqimizda</p>
-                        <h1 className="text-white text-[60px] font-[800] leading-[64px] mt-[12px]">
+                        <h1 className="text-white text-[36px] sm:text-[48px] lg:text-[60px] font-[800] leading-[42px] sm:leading-[54px] lg:leading-[64px] mt-[12px]">
                             SamDU Axborot-resurs
                             <br />
                             <span className="text-[#2A85F4]">markazi</span>
                         </h1>
-                        <p className="max-w-[720px] text-white/75 text-[18px] font-[400] leading-[28px] mt-[18px]">
+                        <p className="max-w-[720px] text-white/75 text-[15px] lg:text-[18px] font-[400] leading-[24px] lg:leading-[28px] mt-[18px]">
                             Bir asrdan ortiq tarixga ega kutubxona — bugungi kunda zamonaviy raqamli
-                            <br />
                             platforma sifatida talabalar, professorlar va tadqiqotchilarga xizmat qilmoqda.
                         </p>
                     </div>
                 </div>
 
-                {/* Info component */}
-                <div className="absolute left-1/2 -translate-x-1/2 bottom-[-65px] w-[1232px] z-10">
-                    <div className="h-[130px] rounded-[20px] bg-white shadow-[0_18px_40px_#15396530] px-[42px] grid grid-cols-4 items-center">
+                {/* Info card - desktop: absolute, mobile: relative */}
+                <div className="lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:bottom-[-65px] w-full max-w-[1232px] lg:w-[1232px] mx-auto px-4 lg:px-0 mt-8 lg:mt-0 pb-8 lg:pb-0 z-10">
+                    <div className="h-auto lg:h-[130px] rounded-[20px] bg-white shadow-[0_18px_40px_#15396530] px-[24px] lg:px-[42px] py-6 lg:py-0 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 items-center">
                         <div>
-                            <p className="text-[#153965] text-[36px] font-[800] leading-[42px]">1927</p>
-                            <p className="uppercase text-[#65758B] text-[12px] font-[500] mt-[8px]">Tashkil etilgan</p>
+                            <p className="text-[#153965] text-[28px] lg:text-[36px] font-[800] leading-[36px] lg:leading-[42px]">1927</p>
+                            <p className="uppercase text-[#65758B] text-[11px] lg:text-[12px] font-[500] mt-[8px]">Tashkil etilgan</p>
                         </div>
                         <div>
-                            <p className="text-[#153965] text-[36px] font-[800] leading-[42px]">100K+</p>
-                            <p className="uppercase text-[#65758B] text-[12px] font-[500] mt-[8px]">Kitoblar fondi</p>
+                            <p className="text-[#153965] text-[28px] lg:text-[36px] font-[800] leading-[36px] lg:leading-[42px]">100K+</p>
+                            <p className="uppercase text-[#65758B] text-[11px] lg:text-[12px] font-[500] mt-[8px]">Kitoblar fondi</p>
                         </div>
                         <div>
-                            <p className="text-[#153965] text-[36px] font-[800] leading-[42px]">25K</p>
-                            <p className="uppercase text-[#65758B] text-[12px] font-[500] mt-[8px]">Faol o&apos;quvchilar</p>
+                            <p className="text-[#153965] text-[28px] lg:text-[36px] font-[800] leading-[36px] lg:leading-[42px]">25K</p>
+                            <p className="uppercase text-[#65758B] text-[11px] lg:text-[12px] font-[500] mt-[8px]">Faol o&apos;quvchilar</p>
                         </div>
                         <div>
-                            <p className="text-[#153965] text-[36px] font-[800] leading-[42px]">180+</p>
-                            <p className="uppercase text-[#65758B] text-[12px] font-[500] mt-[8px]">Xodimlar</p>
+                            <p className="text-[#153965] text-[28px] lg:text-[36px] font-[800] leading-[36px] lg:leading-[42px]">180+</p>
+                            <p className="uppercase text-[#65758B] text-[11px] lg:text-[12px] font-[500] mt-[8px]">Xodimlar</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             {/* Markaz haqida */}
-            <div className="max-w-[1570px] mx-auto px-[10px] h-[895px] pt-[150px] mb-30">
-                <div className="grid grid-cols-2 gap-[90px] items-center h-full">
+            <div className="max-w-[1570px] mx-auto px-4 lg:px-[10px] pt-10 lg:pt-[150px] pb-16 lg:mb-30">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-[48px] lg:gap-[90px] items-center">
                     {/* Chap qism */}
                     <div>
                         <p className="text-[#2A85F4] uppercase text-[12px] font-[700] tracking-[1px]">Markaz haqida</p>
-                        <h2 className="text-[#153965] text-[40px] font-[800] leading-[48px] mt-[10px]">
+                        <h2 className="text-[#153965] text-[28px] lg:text-[40px] font-[800] leading-[34px] lg:leading-[48px] mt-[10px]">
                             Bilim, ilm va innovatsiyalar
                             <br />
                             markazida
                         </h2>
 
-                        <p className="max-w-[680px] text-[#65758B] text-[17px] font-[400] leading-[26px] mt-[24px]">
+                        <p className="text-[#65758B] text-[15px] lg:text-[17px] font-[400] leading-[24px] lg:leading-[26px] mt-[24px]">
                             Sharof Rashidov nomidagi Samarqand davlat universiteti Axborot-resurs
                             markazi — mintaqamizdagi eng yirik akademik kutubxonalardan biri. Bizning
                             maqsadimiz — har bir talabaga, professorga va tadqiqotchiga zamonaviy
                             bilim manbalariga oson va tez kirish imkonini taqdim etish.
                         </p>
 
-                        <p className="max-w-[680px] text-[#65758B] text-[17px] font-[400] leading-[26px] mt-[16px]">
+                        <p className="text-[#65758B] text-[15px] lg:text-[17px] font-[400] leading-[24px] lg:leading-[26px] mt-[16px]">
                             Markaz tarkibida fondlari boyitilgan oltita ixtisoslashgan o'qish zali,
                             raqamli laboratoriya, audio-vizual studiya va xalqaro ilmiy bazalarga
                             ulangan tadqiqotchilar maydoni faoliyat yuritadi.
                         </p>
 
-                        <div className="flex items-center gap-[12px] mt-[30px]">
+                        <div className="flex flex-wrap items-center gap-[12px] mt-[30px]">
                             <button className="h-[46px] px-[22px] rounded-full bg-[#2A85F4] text-white text-[14px] font-[700] flex items-center gap-[10px] cursor-pointer active:scale-95 transition-all duration-150">
                                 Virtual sayohat
                                 <ArrowRight size={16} strokeWidth={2} />
@@ -94,11 +93,11 @@ export default function Markaz() {
                     </div>
 
                     {/* O'ng qism */}
-                    <div className="relative h-full flex items-center justify-end">
-                        <div className="absolute -top-[40px] -right-[49px] w-[118px] h-[118px] rounded-full bg-[#EBF4FF]"></div>
-                        <div className="absolute left-9 -bottom-9 w-[152px] h-[152px] rounded-[24px] bg-[#2A85F4] shadow-[0_18px_35px_#2A85F440]"></div>
+                    <div className="relative flex items-center justify-center lg:justify-end">
+                        <div className="hidden lg:block absolute -top-[40px] -right-[49px] w-[118px] h-[118px] rounded-full bg-[#EBF4FF]"></div>
+                        <div className="hidden lg:block absolute left-9 -bottom-9 w-[152px] h-[152px] rounded-[24px] bg-[#2A85F4] shadow-[0_18px_35px_#2A85F440]"></div>
 
-                        <div className="relative w-[648px] h-[735px] rounded-[24px] overflow-hidden bg-gradient-to-br from-[#153965] via-[#2E1F7A] to-[#6A288A]">
+                        <div className="relative w-full lg:w-[648px] h-[300px] sm:h-[420px] lg:h-[735px] rounded-[24px] overflow-hidden bg-gradient-to-br from-[#153965] via-[#2E1F7A] to-[#6A288A]">
                             <div className="absolute inset-0 opacity-15 [background-image:radial-gradient(circle,#ffffff_1px,transparent_1px)] [background-size:30px_30px]"></div>
 
                             <div className="relative h-full flex items-center justify-center">
@@ -118,60 +117,46 @@ export default function Markaz() {
             </div>
 
             {/* Qadriyatlarimiz */}
-            <div className="h-[505px] bg-[#EBF4FF66]">
-                <div className="max-w-[1570px] px-[10px] mx-auto h-full">
-                    {/* Title */}
-                    <div className="text-center pt-[70px]">
+            <div className="bg-[#EBF4FF66] py-[48px] lg:py-0 lg:h-[505px]">
+                <div className="max-w-[1570px] px-4 lg:px-[10px] mx-auto h-full">
+                    <div className="text-center pt-0 lg:pt-[70px]">
                         <p className="text-[#2A85F4] uppercase text-[12px] font-[700] tracking-[1px]">Qadriyatlarimiz</p>
-                        <h2 className="text-[#153965] text-[36px] font-[800] leading-[44px] mt-[8px]">Bizni harakatga keltiradigan g&apos;oyalar</h2>
+                        <h2 className="text-[#153965] text-[26px] lg:text-[36px] font-[800] leading-[32px] lg:leading-[44px] mt-[8px]">Bizni harakatga keltiradigan g&apos;oyalar</h2>
                     </div>
 
-                    {/* Cards */}
-                    <div className="grid grid-cols-3 gap-[24px] mt-[50px]">
-                        {/* Card 1 */}
-                        <div className="h-[227px] rounded-[20px] border border-[#D7DEE8] bg-white px-[32px] py-[32px] flex flex-col justify-between">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-[24px] mt-[50px]">
+                        <div className="h-auto lg:h-[227px] rounded-[20px] border border-[#D7DEE8] bg-white px-[32px] py-[32px] flex flex-col justify-between gap-6 lg:gap-0">
                             <div className="w-[56px] h-[56px] rounded-[14px] bg-gradient-to-br from-[#2A85F4] to-[#5B47F5] text-white flex items-center justify-center shadow-[0_8px_16px_#2A85F440]">
                                 <Target size={28} strokeWidth={2} />
                             </div>
-
                             <div>
                                 <h3 className="text-[#153965] text-[22px] font-[700] leading-[28px]">Maqsadimiz</h3>
                                 <p className="text-[#65758B] text-[15px] font-[400] leading-[24px] mt-[8px]">
-                                    Talabalar va olimlarga jahon ilmiy resurslariga
-                                    <br />
-                                    cheksiz kirish imkonini yaratish.
+                                    Talabalar va olimlarga jahon ilmiy resurslariga cheksiz kirish imkonini yaratish.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Card 2 */}
-                        <div className="h-[227px] rounded-[20px] border border-[#D7DEE8] bg-white px-[32px] py-[32px] flex flex-col justify-between">
+                        <div className="h-auto lg:h-[227px] rounded-[20px] border border-[#D7DEE8] bg-white px-[32px] py-[32px] flex flex-col justify-between gap-6 lg:gap-0">
                             <div className="w-[56px] h-[56px] rounded-[14px] bg-gradient-to-br from-[#E8306E] to-[#FF674D] text-white flex items-center justify-center shadow-[0_8px_16px_#E8306E40]">
                                 <Compass size={28} strokeWidth={2} />
                             </div>
-
                             <div>
                                 <h3 className="text-[#153965] text-[22px] font-[700] leading-[28px]">Vazifamiz</h3>
                                 <p className="text-[#65758B] text-[15px] font-[400] leading-[24px] mt-[8px]">
-                                    An&apos;anaviy kutubxona xizmatlarini raqamli
-                                    <br />
-                                    innovatsiyalar bilan birlashtirish.
+                                    An&apos;anaviy kutubxona xizmatlarini raqamli innovatsiyalar bilan birlashtirish.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Card 3 */}
-                        <div className="h-[227px] rounded-[20px] border border-[#D7DEE8] bg-white px-[32px] py-[32px] flex flex-col justify-between">
+                        <div className="h-auto lg:h-[227px] rounded-[20px] border border-[#D7DEE8] bg-white px-[32px] py-[32px] flex flex-col justify-between gap-6 lg:gap-0">
                             <div className="w-[56px] h-[56px] rounded-[14px] bg-gradient-to-br from-[#8C35E8] to-[#D126C5] text-white flex items-center justify-center shadow-[0_8px_16px_#A72EDB40]">
                                 <Sparkles size={28} strokeWidth={2} />
                             </div>
-
                             <div>
                                 <h3 className="text-[#153965] text-[22px] font-[700] leading-[28px]">Qadriyatimiz</h3>
                                 <p className="text-[#65758B] text-[15px] font-[400] leading-[24px] mt-[8px]">
-                                    Bilimga ochiqlik, sifat, doimiy o&apos;sish va akademik
-                                    <br />
-                                    halollik.
+                                    Bilimga ochiqlik, sifat, doimiy o&apos;sish va akademik halollik.
                                 </p>
                             </div>
                         </div>
@@ -180,29 +165,24 @@ export default function Markaz() {
             </div>
 
             {/* Xizmatlar */}
-            <div className="h-[478px]">
-                <div className="max-w-[1570px] px-[10px] mx-auto h-full">
-                    {/* Title */}
-                    <div className="flex items-end justify-between pt-[70px]">
+            <div className="py-[48px] lg:py-0 lg:h-[478px]">
+                <div className="max-w-[1570px] px-4 lg:px-[10px] mx-auto h-full">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between pt-0 lg:pt-[70px] gap-4">
                         <div>
                             <p className="text-[#2A85F4] uppercase text-[12px] font-[700] tracking-[1px]">Xizmatlar</p>
-                            <h2 className="text-[#153965] text-[36px] font-[800] leading-[44px] mt-[8px]">Markaz taklif etadi</h2>
+                            <h2 className="text-[#153965] text-[26px] lg:text-[36px] font-[800] leading-[32px] lg:leading-[44px] mt-[8px]">Markaz taklif etadi</h2>
                         </div>
-
-                        <a href="#" className="flex items-center gap-[6px] text-[#2A85F4] text-[14px] font-[700] pb-[6px]">
+                        <a href="#" className="flex items-center gap-[6px] text-[#2A85F4] text-[14px] font-[700] pb-[6px] shrink-0">
                             Barchasi
                             <ArrowRight size={15} strokeWidth={2.5} />
                         </a>
                     </div>
 
-                    {/* Cards */}
-                    <div className="grid grid-cols-4 gap-[24px] mt-[36px]">
-                        {/* Card 1 */}
-                        <div className="h-[197px] rounded-[14px] border border-[#D7DEE8] bg-white px-[24px] py-[26px] flex flex-col justify-between">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[24px] mt-[36px]">
+                        <div className="h-auto lg:h-[197px] rounded-[14px] border border-[#D7DEE8] bg-white px-[24px] py-[26px] flex flex-col justify-between gap-4 lg:gap-0">
                             <div className="w-[44px] h-[44px] rounded-[12px] bg-[#EAF3FF] text-[#2A85F4] flex items-center justify-center">
                                 <BookOpenCheck size={22} strokeWidth={2} />
                             </div>
-
                             <div>
                                 <h3 className="text-[#153965] text-[16px] font-[700] leading-[22px]">Elektron katalog</h3>
                                 <p className="text-[#65758B] text-[13px] font-[400] leading-[20px] mt-[6px]">100 000+ resurs onlayn qidiruv tizimi orqali</p>
@@ -210,29 +190,21 @@ export default function Markaz() {
                             </div>
                         </div>
 
-                        {/* Card 2 */}
-                        <div className="h-[197px] rounded-[14px] border border-[#D7DEE8] bg-white px-[24px] py-[26px] flex flex-col justify-between">
+                        <div className="h-auto lg:h-[197px] rounded-[14px] border border-[#D7DEE8] bg-white px-[24px] py-[26px] flex flex-col justify-between gap-4 lg:gap-0">
                             <div className="w-[44px] h-[44px] rounded-[12px] bg-[#EAF3FF] text-[#2A85F4] flex items-center justify-center">
                                 <GraduationCap size={22} strokeWidth={2} />
                             </div>
-
                             <div>
                                 <h3 className="text-[#153965] text-[16px] font-[700] leading-[22px]">Akademik qo&apos;llab-quvvatlash</h3>
-                                <p className="text-[#65758B] text-[13px] font-[400] leading-[20px] mt-[6px]">
-                                    Ilmiy ish va dissertatsiyalar uchun
-                                    <br />
-                                    konsultatsiya
-                                </p>
+                                <p className="text-[#65758B] text-[13px] font-[400] leading-[20px] mt-[6px]">Ilmiy ish va dissertatsiyalar uchun konsultatsiya</p>
                                 <ArrowRight size={15} strokeWidth={1.8} className="-rotate-45 text-[#153965] mt-[8px]" />
                             </div>
                         </div>
 
-                        {/* Card 3 */}
-                        <div className="h-[197px] rounded-[14px] border border-[#D7DEE8] bg-white px-[24px] py-[26px] flex flex-col justify-between">
+                        <div className="h-auto lg:h-[197px] rounded-[14px] border border-[#D7DEE8] bg-white px-[24px] py-[26px] flex flex-col justify-between gap-4 lg:gap-0">
                             <div className="w-[44px] h-[44px] rounded-[12px] bg-[#EAF3FF] text-[#2A85F4] flex items-center justify-center">
                                 <ShieldCheck size={22} strokeWidth={2} />
                             </div>
-
                             <div>
                                 <h3 className="text-[#153965] text-[16px] font-[700] leading-[22px]">Xalqaro bazalar</h3>
                                 <p className="text-[#65758B] text-[13px] font-[400] leading-[20px] mt-[6px]">Scopus, Web of Science, EBSCOhost kirish</p>
@@ -240,12 +212,10 @@ export default function Markaz() {
                             </div>
                         </div>
 
-                        {/* Card 4 */}
-                        <div className="h-[197px] rounded-[14px] border border-[#D7DEE8] bg-white px-[24px] py-[26px] flex flex-col justify-between">
+                        <div className="h-auto lg:h-[197px] rounded-[14px] border border-[#D7DEE8] bg-white px-[24px] py-[26px] flex flex-col justify-between gap-4 lg:gap-0">
                             <div className="w-[44px] h-[44px] rounded-[12px] bg-[#EAF3FF] text-[#2A85F4] flex items-center justify-center">
                                 <Users size={22} strokeWidth={2} />
                             </div>
-
                             <div>
                                 <h3 className="text-[#153965] text-[16px] font-[700] leading-[22px]">O&apos;qish zallari</h3>
                                 <p className="text-[#65758B] text-[13px] font-[400] leading-[20px] mt-[6px]">8 ta zal, 600+ ish o&apos;rin, kunduzi 24/7 ochiq</p>
@@ -257,19 +227,39 @@ export default function Markaz() {
             </div>
 
             {/* Tariximiz */}
-            <div className="h-[793px] w-full bg-[#153965] mb-10">
-                <div className="h-full max-w-[1570px] mx-auto">
-                    {/* Title */}
-                    <div className="text-center pt-[80px]">
+            <div className="w-full bg-[#153965] mb-10 py-[60px] lg:py-0 lg:h-[793px]">
+                <div className="max-w-[1570px] mx-auto px-4 lg:px-[10px]">
+                    <div className="text-center pt-0 lg:pt-[80px]">
                         <p className="text-[#2A85F4] uppercase text-[12px] font-[700] tracking-[1px]">Tariximiz</p>
-                        <h2 className="text-white text-[36px] font-[800] leading-[44px] mt-[10px]">Asrlarga o&apos;zlashgan yo&apos;l</h2>
+                        <h2 className="text-white text-[26px] lg:text-[36px] font-[800] leading-[32px] lg:leading-[44px] mt-[10px]">Asrlarga o&apos;zlashgan yo&apos;l</h2>
                     </div>
 
-                    {/* Timeline */}
-                    <div className="relative w-full h-[508px] mx-auto mt-[52px]">
+                    {/* Mobile timeline */}
+                    <div className="lg:hidden flex flex-col gap-[28px] mt-[40px]">
+                        {[
+                            { year: "1927", text: "SamDU kutubxonasi tashkil etildi" },
+                            { year: "1965", text: "Yangi binoga ko'chirildi (5 qavatli)" },
+                            { year: "2003", text: "Ilk elektron katalog ishga tushdi" },
+                            { year: "2018", text: "Xalqaro ilmiy bazalarga ulanish" },
+                            { year: "2024", text: "Yangi raqamli platforma ochilishi" },
+                        ].map((item, i, arr) => (
+                            <div key={item.year} className="flex items-start gap-[16px]">
+                                <div className="flex flex-col items-center shrink-0">
+                                    <div className="w-[13px] h-[13px] rounded-full bg-[#2A85F4] shadow-[0_0_12px_#2A85F4] mt-[10px]"></div>
+                                    {i < arr.length - 1 && <div className="w-[1px] h-[28px] bg-white/15 mt-[4px]"></div>}
+                                </div>
+                                <div>
+                                    <p className="text-[#2A85F4] text-[28px] font-[800] leading-[32px]">{item.year}</p>
+                                    <p className="text-white text-[13px] font-[500] leading-[20px] mt-[4px]">{item.text}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Desktop timeline */}
+                    <div className="hidden lg:block relative w-full h-[508px] mx-auto mt-[52px]">
                         <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[1px] h-full bg-white/15"></div>
 
-                        {/* 1927 */}
                         <div className="absolute top-[8px] left-[552px] w-[180px] text-right">
                             <p className="text-[#2A85F4] text-[36px] font-[800] leading-[42px]">1927</p>
                         </div>
@@ -278,7 +268,6 @@ export default function Markaz() {
                             <p className="text-white text-[12px] font-[500] leading-[16px]">SamDU kutubxonasi tashkil etildi</p>
                         </div>
 
-                        {/* 1965 */}
                         <div className="absolute top-[116px] left-[838px] w-[180px]">
                             <p className="text-[#2A85F4] text-[36px] font-[800] leading-[42px]">1965</p>
                         </div>
@@ -287,7 +276,6 @@ export default function Markaz() {
                             <p className="text-white text-[12px] font-[500] leading-[16px]">Yangi binoga ko&apos;chirildi (5 qavatli)</p>
                         </div>
 
-                        {/* 2003 */}
                         <div className="absolute top-[224px] left-[552px] w-[180px] text-right">
                             <p className="text-[#2A85F4] text-[36px] font-[800] leading-[42px]">2003</p>
                         </div>
@@ -296,7 +284,6 @@ export default function Markaz() {
                             <p className="text-white text-[12px] font-[500] leading-[16px]">Ilk elektron katalog ishga tushdi</p>
                         </div>
 
-                        {/* 2018 */}
                         <div className="absolute top-[332px] left-[838px] w-[180px]">
                             <p className="text-[#2A85F4] text-[36px] font-[800] leading-[42px]">2018</p>
                         </div>
@@ -305,7 +292,6 @@ export default function Markaz() {
                             <p className="text-white text-[12px] font-[500] leading-[16px]">Xalqaro ilmiy bazalarga ulanish</p>
                         </div>
 
-                        {/* 2024 */}
                         <div className="absolute top-[440px] left-[552px] w-[180px] text-right">
                             <p className="text-[#2A85F4] text-[36px] font-[800] leading-[42px]">2024</p>
                         </div>
@@ -318,79 +304,54 @@ export default function Markaz() {
             </div>
 
             {/* Jamoa */}
-            <div className="h-[619px] w-full bg-[#F8FAFC] mb-10">
-                <div className="h-full max-w-[1570px] px-[10px] mx-auto">
-                    <div className="text-center pt-[66px]">
+            <div className="w-full bg-[#F8FAFC] mb-10 py-[48px] lg:py-0 lg:h-[619px]">
+                <div className="max-w-[1570px] px-4 lg:px-[10px] mx-auto">
+                    <div className="text-center pt-0 lg:pt-[66px]">
                         <p className="text-[#2A85F4] uppercase text-[12px] font-[800] tracking-[2px] leading-[16px]">Jamoa</p>
-                        <h2 className="text-[#153965] text-[40px] font-[800] leading-[48px] mt-[12px]">Markaz rahbariyati</h2>
+                        <h2 className="text-[#153965] text-[28px] lg:text-[40px] font-[800] leading-[34px] lg:leading-[48px] mt-[12px]">Markaz rahbariyati</h2>
                     </div>
 
-                    <div className="grid grid-cols-4 gap-[36px] mt-[50px]">
-                        <div className="h-[374px] rounded-[20px] overflow-hidden bg-white border border-[#D7DEE8]">
-                            <div className="h-[289px] bg-gradient-to-br from-[#2A85F4] to-[#5B47F5] flex items-center justify-center">
-                                <p className="text-white text-[38px] font-[800] leading-[44px]">NK</p>
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-[24px] lg:gap-[36px] mt-[50px]">
+                        {[
+                            { init: "NK", name: "Prof. N. Karimova", role: "Direktor", grad: "from-[#2A85F4] to-[#5B47F5]" },
+                            { init: "AY", name: "Dr. A. Yusupov", role: "Direktor o'rinbosari", grad: "from-[#E8306E] to-[#FF674D]" },
+                            { init: "MR", name: "M. Rahimova", role: "Bo'lim boshlig'i", grad: "from-[#2BB673] to-[#20C7E6]" },
+                            { init: "ST", name: "S. Tursunov", role: "Bosh kutubxonachi", grad: "from-[#FF9518] to-[#FF3E3E]" },
+                        ].map((p) => (
+                            <div key={p.init} className="rounded-[20px] overflow-hidden bg-white border border-[#D7DEE8]">
+                                <div className={`h-[180px] lg:h-[289px] bg-gradient-to-br ${p.grad} flex items-center justify-center`}>
+                                    <p className="text-white text-[32px] lg:text-[38px] font-[800]">{p.init}</p>
+                                </div>
+                                <div className="px-[20px] pt-[18px] pb-[18px]">
+                                    <h3 className="text-[#153965] text-[15px] lg:text-[16px] font-[800] leading-[20px]">{p.name}</h3>
+                                    <p className="text-[#65758B] text-[13px] font-[400] leading-[18px] mt-[6px]">{p.role}</p>
+                                </div>
                             </div>
-                            <div className="h-[85px] px-[20px] pt-[22px]">
-                                <h3 className="text-[#153965] text-[16px] font-[800] leading-[20px]">Prof. N. Karimova</h3>
-                                <p className="text-[#65758B] text-[13px] font-[400] leading-[18px] mt-[6px]">Direktor</p>
-                            </div>
-                        </div>
-
-                        <div className="h-[374px] rounded-[20px] overflow-hidden bg-white border border-[#D7DEE8]">
-                            <div className="h-[289px] bg-gradient-to-br from-[#E8306E] to-[#FF674D] flex items-center justify-center">
-                                <p className="text-white text-[38px] font-[800] leading-[44px]">AY</p>
-                            </div>
-                            <div className="h-[85px] px-[20px] pt-[22px]">
-                                <h3 className="text-[#153965] text-[16px] font-[800] leading-[20px]">Dr. A. Yusupov</h3>
-                                <p className="text-[#65758B] text-[13px] font-[400] leading-[18px] mt-[6px]">Direktor o&apos;rinbosari</p>
-                            </div>
-                        </div>
-
-                        <div className="h-[374px] rounded-[20px] overflow-hidden bg-white border border-[#D7DEE8]">
-                            <div className="h-[289px] bg-gradient-to-br from-[#2BB673] to-[#20C7E6] flex items-center justify-center">
-                                <p className="text-white text-[38px] font-[800] leading-[44px]">MR</p>
-                            </div>
-                            <div className="h-[85px] px-[20px] pt-[22px]">
-                                <h3 className="text-[#153965] text-[16px] font-[800] leading-[20px]">M. Rahimova</h3>
-                                <p className="text-[#65758B] text-[13px] font-[400] leading-[18px] mt-[6px]">Bo&apos;lim boshlig&apos;i</p>
-                            </div>
-                        </div>
-
-                        <div className="h-[374px] rounded-[20px] overflow-hidden bg-white border border-[#D7DEE8]">
-                            <div className="h-[289px] bg-gradient-to-br from-[#FF9518] to-[#FF3E3E] flex items-center justify-center">
-                                <p className="text-white text-[38px] font-[800] leading-[44px]">ST</p>
-                            </div>
-                            <div className="h-[85px] px-[20px] pt-[22px]">
-                                <h3 className="text-[#153965] text-[16px] font-[800] leading-[20px]">S. Tursunov</h3>
-                                <p className="text-[#65758B] text-[13px] font-[400] leading-[18px] mt-[6px]">Bosh kutubxonachi</p>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
-  
+
             {/* Quote */}
-            <div className="w-full mb-10 py-[64px]">
-                <div className="h-full max-w-[1570px] mx-auto ">
-                    <div className="w-[1280px] h-[352px] mx-auto rounded-[24px] bg-gradient-to-r from-[#102B4C] via-[#2E1F7A] to-[#6A288A] flex flex-col items-center justify-center text-center">
-                        <p className="text-[#2A85F4] text-[72px] font-[800] leading-[54px] mb-[30px]">”</p>
-                        <h2 className="max-w-[790px] text-white text-[30px] font-[800] leading-[38px]">
+            <div className="w-full mb-10 py-[48px] lg:py-[64px]">
+                <div className="max-w-[1570px] mx-auto px-4 lg:px-[10px]">
+                    <div className="w-full lg:w-[1280px] lg:mx-auto rounded-[24px] bg-gradient-to-r from-[#102B4C] via-[#2E1F7A] to-[#6A288A] flex flex-col items-center justify-center text-center px-6 lg:px-0 py-12 lg:h-[352px]">
+                        <p className="text-[#2A85F4] text-[56px] lg:text-[72px] font-[800] leading-[40px] lg:leading-[54px] mb-[24px] lg:mb-[30px]">"</p>
+                        <h2 className="max-w-[790px] text-white text-[20px] lg:text-[30px] font-[800] leading-[28px] lg:leading-[38px]">
                             "Kutubxona — bu xalqning ruhi, millat tafakkurining
-                            <br />
                             xazinasidir. Uni asrash va boyitish — hammamizning
-                            <br />
                             burchimizdir."
                         </h2>
-                        <p className="text-white/60 text-[15px] font-[400] leading-[20px] mt-[30px]">— Sharof Rashidov</p>
+                        <p className="text-white/60 text-[15px] font-[400] leading-[20px] mt-[24px] lg:mt-[30px]">— Sharof Rashidov</p>
                     </div>
                 </div>
             </div>
 
             {/* Contact us */}
-            <div className="h-[460px] w-full bg-[#EBF4FF66] pt-[80px]">
-                <div className="h-full max-w-[1570px] mx-auto">
-                    <div className="grid grid-cols-3 gap-[36px]">
-                        <div className="h-[205px] rounded-[20px] border border-[#D7DEE8] bg-white px-[32px] pt-[32px]">
+            <div className="w-full bg-[#EBF4FF66] py-[48px] lg:py-0 lg:h-[460px] lg:pt-[80px]">
+                <div className="max-w-[1570px] mx-auto px-4 lg:px-[10px]">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-[24px] lg:gap-[36px]">
+                        <div className="h-auto lg:h-[205px] rounded-[20px] border border-[#D7DEE8] bg-white px-[32px] py-[28px] lg:pt-[32px]">
                             <div className="w-[48px] h-[48px] rounded-[14px] bg-[#EAF3FF] text-[#2A85F4] flex items-center justify-center">
                                 <MapPin size={24} strokeWidth={2.2} />
                             </div>
@@ -398,7 +359,7 @@ export default function Markaz() {
                             <p className="text-[#65758B] text-[14px] font-[400] leading-[22px] mt-[6px]">Samarqand sh., Universitet xiyoboni 15</p>
                         </div>
 
-                        <div className="h-[205px] rounded-[20px] border border-[#D7DEE8] bg-white px-[32px] pt-[32px]">
+                        <div className="h-auto lg:h-[205px] rounded-[20px] border border-[#D7DEE8] bg-white px-[32px] py-[28px] lg:pt-[32px]">
                             <div className="w-[48px] h-[48px] rounded-[14px] bg-[#EAF3FF] text-[#2A85F4] flex items-center justify-center">
                                 <Phone size={24} strokeWidth={2.2} />
                             </div>
@@ -407,7 +368,7 @@ export default function Markaz() {
                             <p className="text-[#65758B] text-[14px] font-[400] leading-[22px]">+998 66 239 12 51</p>
                         </div>
 
-                        <div className="h-[205px] rounded-[20px] border border-[#D7DEE8] bg-white px-[32px] pt-[32px]">
+                        <div className="h-auto lg:h-[205px] rounded-[20px] border border-[#D7DEE8] bg-white px-[32px] py-[28px] lg:pt-[32px]">
                             <div className="w-[48px] h-[48px] rounded-[14px] bg-[#EAF3FF] text-[#2A85F4] flex items-center justify-center">
                                 <Mail size={24} strokeWidth={2.2} />
                             </div>
@@ -417,8 +378,8 @@ export default function Markaz() {
                         </div>
                     </div>
 
-                    <div className="h-[69px] rounded-[20px] border border-[#D7DEE8] bg-white mt-[24px] px-[25px] flex items-center gap-[18px]">
-                        <Clock size={20} strokeWidth={2.2} className="text-[#2A85F4]" />
+                    <div className="h-auto lg:h-[69px] rounded-[20px] border border-[#D7DEE8] bg-white mt-[24px] px-[25px] py-4 lg:py-0 flex flex-wrap items-center gap-[12px] lg:gap-[18px]">
+                        <Clock size={20} strokeWidth={2.2} className="text-[#2A85F4] shrink-0" />
                         <p className="text-[#153965] text-[14px] font-[800] leading-[20px]">Ish vaqti:</p>
                         <p className="text-[#65758B] text-[14px] font-[400] leading-[20px]">Dushanba–Juma 8:00–22:00 · Shanba 9:00–18:00 · Yakshanba dam olish</p>
                     </div>

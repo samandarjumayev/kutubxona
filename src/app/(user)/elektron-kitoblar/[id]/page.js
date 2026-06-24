@@ -50,7 +50,7 @@ export default function KitobDetails({ params }) {
         <div className="bg-[#F9FAFC] min-h-screen pb-[100px]">
             {/* Top Hero Section */}
             <div className="relative bg-gradient-to-r from-[#153965] via-[#2E1F7A] to-[#6A288A] pt-[40px] pb-[80px]">
-                <div className="max-w-[1570px] mx-auto px-[10px]">
+                <div className="max-w-[1570px] mx-auto px-4 lg:px-[10px]">
                     {/* Back to catalog */}
                     <Link href="/elektron-kitoblar" className="inline-flex items-center gap-[8px] text-white/80 hover:text-white text-[14px] font-[500] transition-colors mb-[40px]">
                         <ArrowLeft size={16} />
@@ -160,7 +160,7 @@ export default function KitobDetails({ params }) {
             </div>
 
             {/* Main Content Grid Block */}
-            <div className="max-w-[1570px] mx-auto px-[10px] mt-[40px]">
+            <div className="max-w-[1570px] mx-auto px-4 lg:px-[10px] mt-[40px]">
                 <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-[36px] items-start">
                     
                     {/* Left Column: Description, Chapters, Reviews */}
